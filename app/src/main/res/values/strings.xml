@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MeNotes</string>
+    <string name="my_notes_title">My Notes</string>
+    <string name="add_btt_description">Add new note</string>
 </resources>
