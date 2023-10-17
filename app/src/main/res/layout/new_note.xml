@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".NewNoteActivity">
+
+
+    <LinearLayout
+        android:id="@+id/fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:contentDescription="@string/add_btt_description"
+            android:src="@drawable/baseline_check_24"
+            app:backgroundTint="@color/white" />
+
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="Title"
+            android:background="@null"
+            android:hint="@string/new_note_title"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:paddingVertical="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="28sp" />
+
+        <EditText
+            android:id="@+id/editTextContent"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="@null"
+            android:background="@null"
+            android:focusableInTouchMode="true"
+            android:inputType="textMultiLine"
+            android:paddingVertical="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
